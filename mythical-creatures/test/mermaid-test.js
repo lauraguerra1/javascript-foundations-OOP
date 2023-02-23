@@ -60,6 +60,16 @@ describe('Mermaid', function() {
         mermaid.shapeShift(); 
 
         assert.equal(mermaid.form, 'human');
+    }); 
+    it('should have the same hair color in human form as her tail color from mermaid form', function(){
+        var mermaid1 = new Mermaid({name: 'Marina'})
+        var mermaid2 = new Mermaid({name: 'Pearl', favoriteColor: 'white'})
+
+        mermaid1.shapeShift();
+        mermaid2.shapeShift(); 
+
+        assert.equal(mermaid1.hairColor, 'aquamarine');
+        assert.equal(mermaid2.hairColor, 'white');
     })
     it('should change back to mermaid form after shapeshifting', function() {
         var mermaid = new Mermaid({});
@@ -180,6 +190,11 @@ describe('Shell', function() {
 
         assert.instanceOf(shell, Shell); 
     });
+    it('should not have a name', function(){
+        var shell = new Shell();
+
+        assert.equal(shell.name, null);
+    })
     it('should be white at default and it can have a different color', function() {
         var shell = new Shell(); 
         var blueShell = new Shell('blue');

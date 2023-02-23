@@ -20,6 +20,7 @@ class Mermaid {
             this.form = 'goddess';
         } else if (this.form === 'mermaid') {
             this.form = 'human';
+            this.hairColor = this.tail;
         } else {
             this.form = 'mermaid';
         }
