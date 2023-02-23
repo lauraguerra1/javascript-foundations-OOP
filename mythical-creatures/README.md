@@ -32,4 +32,6 @@ Run the command `npm test mythical-creatures/test/unicorn-test.js`. To run other
 
 ### Extra Challenge: Make a New Creature!
 
+- [x] `mermaid`
+
 Start by making a new test file in the test directory and write all of the tests. Then, add in a file in the exercises directory and write the code necessary to pass all of the tests you wrote. Send your new creature to your instructors - We may add it into the official test suite!
