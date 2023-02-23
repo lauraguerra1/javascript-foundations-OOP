@@ -1,5 +1,4 @@
 var Shell = require('./shell');
-var Woman = require('./woman');
 
 class Mermaid {
     constructor(mermaid) {
@@ -26,8 +25,8 @@ class Mermaid {
         }
     }
     sing(words) {
-        var arr = words.split(' ')
-        var singingArr = arr.map(x => x.toUpperCase() + x.slice(x.length - 1).toUpperCase() + x.slice(x.length - 1).toUpperCase())
+        var upperArr = words.split(' ').map(x => x.toUpperCase());
+        var singingArr = upperArr.map(x => x + x.slice(x.length - 1) + x.slice(x.length - 1));
         var singingWords = singingArr.join(' ');
         if(this.form === "goddess") {
             return `~~~${singingWords}~~~`;
@@ -37,15 +36,12 @@ class Mermaid {
     }
     makeMermaid(woman) {
         if(this.form === "goddess") {
-            for (var i = 0; i < this.shells.length; i++) {
-                if (this.shells[i].color === 'blue') {
-                    console.log(this.shells[i])
-                    woman.shells.push(this.shells[i]);
-                    this.shells.splice(i, 1);
-                    woman.form = 'mermaid';
-                    return `Welcome to the sea, ${woman.name}!`;
-                }
-            }
+            var firstBlueShell = this.shells.find(x => x.color === 'blue');
+            var index = this.shells.indexOf(firstBlueShell)
+            this.shells.splice(index, 1)
+            woman.shells.push(firstBlueShell);
+            woman.form = 'mermaid';
+            return `Welcome to the sea, ${woman.name}!`;
         } else {
             return `Only a true goddess with a blue shell can make other mermaids!`;
         }

@@ -161,7 +161,6 @@ describe('Mermaid', function() {
         aletta.makeMermaid(adella);
 
         assert.equal(adella.form, 'mermaid');
-        console.log(adella.shells);
         assert.instanceOf(adella.shells[0], Shell);
         assert.equal(adella.shells[0].color, 'blue');
         assert.equal(adella.shells.length, 1);
