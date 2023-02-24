@@ -4,6 +4,7 @@ class Material {
         this.price = price; 
         this.amount = amount; 
         this.units = units;
+        this.cost = this.price * this.amount
     }
     useMaterial(num) {
         if (this.amount >= num) {
