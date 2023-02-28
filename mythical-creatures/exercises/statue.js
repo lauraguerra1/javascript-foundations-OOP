@@ -1,10 +1,10 @@
-var Medusa = require('./medusa');
-var Person = require('./person');
+var Medusa = require("./medusa");
+var Person = require("./person");
 
 class Statue {
-    constructor(name) {
-        this.name = name;
-    }
+  constructor(name) {
+    this.name = name;
+  }
 }
 
 module.exports = Statue;

@@ -1,9 +1,9 @@
-var Werewolf = require('./werewolf');
+var Werewolf = require("./werewolf");
 
 class Victim {
-    constructor(name) {
-        this.name = name;
-        this.alive = true;
-    }
+  constructor(name) {
+    this.name = name;
+    this.alive = true;
+  }
 }
-module.exports = Victim; 
+module.exports = Victim;
