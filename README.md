@@ -45,7 +45,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [x] 🛹 [Skate Park](./skate-park)
 - [x] 🐶 [Adopt a Dog](./adopt-a-dog)
 - [x] 👩‍🍳 [Recipes](./recipes)
-- [ ] 🍫 [Vending Machine](./vending-machine)
+- [x] 🍫 [Vending Machine](./vending-machine)
 
 ### Other Greats
 - [ ] ⛷ [Ski Lift](./ski-lift)
