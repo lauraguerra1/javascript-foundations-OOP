@@ -9,10 +9,10 @@ class Wagon {
     this.ammunition = wagon.ammunition;
     this.clothes = wagon.clothes;
     this.settlers = wagon.settlers || [];
-    this.workingWheels = undefined;
-    this.workingAxles = undefined;
-    this.workingOxen = undefined;
-    this.livingSettler = undefined;
+    this.workingWheels = null;
+    this.workingAxles = null;
+    this.workingOxen = null;
+    this.livingSettler = null;
   }
   addPart(part) {
     var attribute = `${part.type}s`;
